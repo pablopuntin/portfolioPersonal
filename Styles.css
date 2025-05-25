@@ -1,0 +1,25 @@
+body.light-mode {
+  background-color: white;
+  color: rgb(42, 41, 41);
+}
+
+body.dark-mode {
+  background-color:  rgb(42, 41, 41);
+  color: white;
+}
+
+/* Ejemplo para fondo del navbar */
+.navbar-dark-mode {
+  background-color: #1f1f1f !important;
+}
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.1);
+}
