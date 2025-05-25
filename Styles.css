@@ -1,11 +1,12 @@
+
 body.light-mode {
-  background-color: white;
+  background-color: rgb(225, 221, 221);
   color: rgb(42, 41, 41);
 }
 
 body.dark-mode {
   background-color:  rgb(42, 41, 41);
-  color: white;
+  color: rgb(160, 120, 120);
 }
 
 /* Ejemplo para fondo del navbar */
@@ -22,4 +23,9 @@ body.dark-mode {
 
 .profile-img:hover {
   transform: scale(1.1);
+}
+/*ICONOS TECNOLOGIAS*/
+.tech-icon{
+  width: 50PX;
+  height: 50PX;
 }
