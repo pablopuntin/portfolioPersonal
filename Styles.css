@@ -29,3 +29,28 @@ body.dark-mode {
   width: 50PX;
   height: 50PX;
 }
+
+/*SECCION ESTUDIOS MEJORADA*/
+.custom-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.custom-list li {
+  position: relative;
+  padding-left: 1.5em;
+  margin-bottom: 0.5em;
+  line-height: 1.6;
+}
+
+.custom-list li::before {
+  content: "✔️";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.card{
+  background-color: rgb(215, 226, 245);
+}
+/*FIN SECCION ESTUDIOS*/
