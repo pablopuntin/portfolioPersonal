@@ -3,115 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Puntin | Desarrollador Backend - Sistemas de Negocio</title>
+    <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- Font Awesome para iconos -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Estilos Propios -->
     <link rel="stylesheet" href="./Styles.css">
-
-    <title>Pablo Puntin-Desarrollador Web</title>
 </head>
+<body class="light-mode">
 
-
-
-<body>
-
-    <!-- Navbar 
-imagen developer pantalla  https://capsulasv2.soyhenry.com/scorm/01605146-c857-44d4-be5a-be231664f150/scormcontent/assets/stock-image.jpg
--->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top mb-3">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#inicio">
-                <i class="fas fa-code me-2"></i>Mi Portfolio
+            <a class="navbar-brand fw-bold" href="#inicio">
+                <i class="fas fa-code me-2"></i>Pablo Puntin
             </a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto me-3">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#inicio">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sobre-mi">Sobre Mí</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#tecnologias">Tecnologías</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#proyectos">Proyectos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#estudios">Estudios</a>
-                    </li>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-3">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre Mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tecnologias">Tecnologías</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#estudios">Estudios</a></li>
                 </ul>
-                
-                <!-- Toggle de modo oscuro 
-                <button class="btn btn-outline-light" id="themeToggle" type="button">
-                    <i class="fas fa-moon" id="themeIcon"></i>
-                </button>-->
-                <!-- toogle nuevo-->
-                 <!-- Toggle de modo claro/oscuro -->
-<div class="form-check form-switch text-light ms-3">
-  <input class="form-check-input" type="checkbox" id="darkModeToggle">
-  <label class="form-check-label" for="darkModeToggle">Modo oscuro</label>
-</div>
-
+                <!-- Selector de Modo Oscuro -->
+                <div class="form-check form-switch text-light ms-lg-3 mt-2 mt-lg-0">
+                    <input class="form-check-input" type="checkbox" id="darkModeToggle">
+                    <label class="form-check-label" for="darkModeToggle">Modo oscuro</label>
+                </div>
             </div>
         </div>
     </nav>
 
-     <!-- Sección Inicio/Hero -->
-    <section id="inicio" class="mt-5">
+    <!-- Hero Section -->
+    <header id="inicio" class="hero-section text-center text-lg-start">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h1 class="display-4 fw-bold mb-4">¡Hola! Soy <span class="text-primary">Pablo Puntin</span></h1>
-                   <p class="lead mb-4">
-                      Desarrollador Backend especializado en sistemas de gestión y reglas de negocio. Experiencia en aplicaciones de facturación, ventas y control de caja, con foco en consistencia de datos y mantenibilidad.
-                   </p>
-
-                    <div class="d-flex gap-3">
+            <div class="row flex-column-reverse flex-lg-row align-items-center g-4">
+                <div class="col-lg-7">
+                    <h1 class="display-4 fw-bold mb-3">¡Hola! Soy <span class="text-primary">Pablo Puntin</span></h1>
+                    <h2 class="h3 text-muted mb-4">Desarrollador Backend - Sistemas de Negocio</h2>
+                    <p class="lead mb-4">
+                        Especializado en diseñar e implementar aplicaciones robustas con <strong>NestJS, TypeScript y PostgreSQL</strong>. Experto en modelar reglas de negocio críticas: facturación, control de cajas diarias como fuente de verdad y flujos transaccionales atómicos.
+                    </p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start flex-wrap">
                         <a href="#proyectos" class="btn btn-primary btn-lg">Ver Proyectos</a>
                         <a href="#sobre-mi" class="btn btn-outline-primary btn-lg">Conoce más</a>
                     </div>
                 </div>
-                <div class="col-lg-6 text-center">
-                   <img src="./asset/img/perfil.jpg" id="profileImage" class=" profile-img img-fluid rounded-circle" alt="Foto de perfil" style="width: 200px; height: 200px; object-fit: cover;">
-
+                <div class="col-lg-5 text-center">
+                    <img src="./asset/img/perfil.jpg" id="profileImage" class="profile-img img-fluid shadow" alt="Pablo Puntin">
                 </div>
             </div>
         </div>
-    </section>
+    </header>
 
-    <!-- Sección Sobre Mí -->
+    <!-- Sobre Mí -->
     <section id="sobre-mi" class="section-padding">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
-                    <h2 class="display-5 fw-bold mb-5">Sobre Mí</h2>
+                    <h2 class="display-5 fw-bold mb-4 section-title">Sobre Mí</h2>
                     <p class="lead mb-4">
-                       Soy desarrollador backend especializado en sistemas de gestión y reglas de negocio. Tengo experiencia construyendo aplicaciones en producción real para facturación, ventas, caja y proveedores, con foco en consistencia de datos y mantenibilidad. Con experiencia en tecnologías web modernas, disfruto resolver problemas complejos y desarrollar aplicaciones que realmente marquen la diferencia en la vida de los usuarios. Mi enfoque es siempre hacia la mejora continua y la adaptación a las tendencias emergentes del sector.
+                        Soy un apasionado de la arquitectura backend simple, limpia y alineada a problemas reales del mercado. Me especializo en transformar procesos analógicos manuales en soluciones digitales robustas, seguras y altamente mantenibles.
                     </p>
-                    <p class="mb-4">
-                        Aunque tengo formación fullstack y conocimientos de frontend, mi pasión está en diseñar arquitecturas backend simples y alineadas a problemas reales. Disfruto transformar procesos manuales en soluciones digitales robustas y claras.
+                    <p class="mb-5">
+                        Además de mi experiencia técnica en desarrollo independiente, cuento con más de 5 años de trayectoria coordinando equipos operativos en el sector privado y dictando talleres técnicos. Esto me ha permitido consolidar habilidades clave en comunicación asertiva, resolución ágil de incidencias y un pensamiento estructurado y pedagógico.
                     </p>
-                    <div class="row text-center mt-5">
-                        <div class="col-md-4">
-                            <i class="fas fa-code text-primary mb-3" style="font-size: 2rem;"></i>
-                            <h5>Desarrollo Web</h5>
-                            <p>Aplicaciones web modernas y responsivas</p>
+                    
+                    <div class="row g-4 text-center mt-2">
+                        <div class="col-12 col-md-4">
+                            <div class="p-3 feature-card rounded">
+                                <i class="fas fa-server text-primary mb-3 feature-icon"></i>
+                                <h5 class="fw-bold">Reglas de Negocio</h5>
+                                <p class="small mb-0">Diseño de arquitecturas transaccionales, control de cajas y consistencia estricta de datos.</p>
+                            </div>
                         </div>
-                        <div class="col-md-4">
-                            <i class="fas fa-mobile-alt text-primary mb-3" style="font-size: 2rem;"></i>
-                            <h5>Responsive Design</h5>
-                            <p>Diseños que se adaptan a cualquier dispositivo</p>
+                        <div class="col-12 col-md-4">
+                            <div class="p-3 feature-card rounded">
+                                <i class="fas fa-shield-alt text-primary mb-3 feature-icon"></i>
+                                <h5 class="fw-bold">Seguridad y APIs</h5>
+                                <p class="small mb-0">Implementación de autenticación JWT y control de acceso basado en roles (RBAC) granular.</p>
+                            </div>
                         </div>
-                        <div class="col-md-4">
-                            <i class="fas fa-database text-primary mb-3" style="font-size: 2rem;"></i>
-                            <h5>Base de Datos</h5>
-                            <p>Gestión eficiente de datos y APIs</p>
+                        <div class="col-12 col-md-4">
+                            <div class="p-3 feature-card rounded">
+                                <i class="fas fa-database text-primary mb-3 feature-icon"></i>
+                                <h5 class="fw-bold">Persistencia Robusta</h5>
+                                <p class="small mb-0">Modelado relacional y optimización con PostgreSQL y TypeORM bajo transacciones aisladas.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -119,287 +102,242 @@ imagen developer pantalla  https://capsulasv2.soyhenry.com/scorm/01605146-c857-4
         </div>
     </section>
 
-      
-    <!-- Sección Tecnologías -->
-<section id="tecnologias" class="py-5">
-  <div class="container">
-    <div class="text-center m-5">
-      <h2 class="display-5 fw-bold">Tecnologías que Manejo</h2>
-      <p class="lead">Herramientas y lenguajes con los que trabajo</p>
-    </div>
-    <div class="row row-cols-2 row-cols-md-4 row-cols-lg-5 g-4 text-center">
-      <div class="col"><i class="fab fa-html5 fa-8x text-danger"></i><div class="small mt-2">HTML5</div></div>
-      <div class="col"><i class="fab fa-css3-alt fa-8x text-primary"></i><div class="small mt-2">CSS3</div></div>
-      <div class="col"><i class="fab fa-bootstrap fa-8x text-purple"></i><div class="small mt-2">Bootstrap</div></div>
-      <div class="col"><i class="fab fa-js-square fa-8x text-warning"></i><div class="small mt-2">JavaScript</div></div>
-      <div class="col"><i class="fab fa-react fa-8x text-info"></i><div class="small mt-2">React</div></div>
-      <div class="col"><i class="fab fa-node-js fa-8x text-success"></i><div class="small mt-2">Node.js</div></div>
-      <div class="col"><i class="fas fa-server fa-8x text-dark"></i><div class="small mt-2">Express</div></div>
-      <div class="col"><i class="fas fa-database fa-8x text-secondary"></i><div class="small mt-2">MongoDB</div></div>
-      <div class="col"><i class="fas fa-code fa-8x text-info"></i><div class="small mt-2">TypeScript</div></div>
-      <div class="col"><i class="fas fa-database fa-8x text-warning"></i><div class="small mt-2">PostgreSQL</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- Sección Proyectos -->
-<section id="proyectos" class="section-padding">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="display-5 fw-bold">Mis Proyectos</h2>
-      <p class="lead">Algunos de mis trabajos más destacados</p>
-    </div>
-
-    <div class="row g-4">
-      <!-- Proyecto Soy Henry -->
-      <div class="col-lg-4 col-md-6">
-        <div class="card project-card shadow-sm">
-          <img src="./asset/img/vista index.jpg" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Proyecto académico Soy Henry</h5>
-            <p class="card-text">App de recomendación de películas con Node.js, Express, MongoDB y panel de administración.</p>
-            <div class="mb-3">
-              <span class="badge bg-primary me-1">JavaScript</span>
-              <span class="badge bg-success me-1">Node.js</span>
-              <span class="badge bg-dark me-1">MongoDB</span>
-              <span class="badge bg-info me-1">Bootstrap</span>
-              <span class="badge bg-secondary">Express</span>
+    <!-- Tecnologías -->
+    <section id="tecnologias" class="section-padding bg-light-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold section-title">Tecnologías</h2>
+                <p class="lead text-muted">Stack de herramientas y lenguajes con los que resuelvo problemas</p>
             </div>
-            <div class="d-flex gap-2">
-              <!-- <a href="#" class="btn btn-primary btn-sm">Ver Demo</a> -->
-              <a href="https://github.com/pablopuntin/HenryM2" target="_blank" class="btn btn-outline-primary btn-sm">Código</a>
+            <!-- Mobile first: 2 columnas por defecto en celular, 4 en tablet, 5 en monitores -->
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-4 text-center justify-content-center">
+                <div class="col"><div class="tech-box shadow-sm"><i class="fab fa-node-js fa-4x text-success"></i><div class="small mt-2 fw-bold">Node.js</div></div></div>
+                <div class="col"><div class="tech-box shadow-sm"><i class="fas fa-server fa-4x text-warning"></i><div class="small mt-2 fw-bold">NestJS</div></div></div>
+                <div class="col"><div class="tech-box shadow-sm"><i class="fas fa-code fa-4x text-info"></i><div class="small mt-2 fw-bold">TypeScript</div></div></div>
+                <div class="col"><div class="tech-box shadow-sm"><i class="fas fa-database fa-4x text-primary"></i><div class="small mt-2 fw-bold">PostgreSQL</div></div></div>
+                <div class="col"><div class="tech-box shadow-sm"><i class="fas fa-layer-group fa-4x text-secondary"></i><div class="small mt-2 fw-bold">TypeORM</div></div></div>
+                <div class="col"><div class="tech-box shadow-sm"><i class="fab fa-js-square fa-4x text-warning"></i><div class="small mt-2 fw-bold">JavaScript</div></div></div>
+                <div class="col"><div class="tech-box shadow-sm"><i class="fab fa-react fa-4x text-info"></i><div class="small mt-2 fw-bold">React / Next.js</div></div></div>
+                <div class="col"><div class="tech-box shadow-sm"><i class="fas fa-shield-halved fa-4x text-dark"></i><div class="small mt-2 fw-bold">JWT / RBAC</div></div></div>
+                <div class="col"><div class="tech-box shadow-sm"><i class="fab fa-docker fa-4x text-primary"></i><div class="small mt-2 fw-bold">Docker (Básico)</div></div></div>
+                <div class="col"><div class="tech-box shadow-sm"><i class="fab fa-git-alt fa-4x text-danger"></i><div class="small mt-2 fw-bold">Git & GitHub</div></div></div>
             </div>
-          </div>
         </div>
-      </div>
+    </section>
 
-     <!-- Proyecto Catálogo de Ropa -->
-<div class="col-lg-4 col-md-6">
-  <div class="card project-card shadow-sm">
-    <img src="./asset/img/catalogo.jpeg" class="card-img-top">
-    <div class="card-body">
-      <h5 class="card-title">Catálogo de Ropa</h5>
-      <p class="card-text">
-        Aplicación web responsive que muestra un catálogo de prendas organizadas por categorías y subcategorías. Desarrollado con Bootstrap y MySQL. Futuras integraciones: control de stock y pagos con Mercado Pago.
-      </p>
-      <div class="mb-3">
-        <span class="badge bg-warning me-1">Java</span>
-        <span class="badge bg-info me-1">Bootstrap</span>
-        <span class="badge bg-success">MySQL</span>
-      </div>
-      <div class="d-flex gap-2">
-        <a href="https://catalogo-ale-g.vercel.app/" class="btn btn-primary btn-sm" target="_blank">Ver Catálogo</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-      <!-- Proyecto Femina Fit -->
-      <div class="col-lg-4 col-md-6">
-        <div class="card project-card shadow-sm">
-          <img src="./asset/img/Femina.jpeg" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Femina Fit (Gimnasio)</h5>
-            <p class="card-text">Sitio institucional para gimnasio. Original en HTML/Bootstrap, migrado a React con componentes modernos.</p>
-            <div class="mb-3">
-              <span class="badge bg-info me-1">React</span>
-              <span class="badge bg-warning me-1">Bootstrap</span>
-              <span class="badge bg-primary">HTML/CSS</span>
+    <!-- Proyectos -->
+    <section id="proyectos" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold section-title">Mis Proyectos</h2>
+                <p class="lead text-muted">Soluciones de software reales y académicas avanzadas</p>
             </div>
-            <div class="d-flex gap-2">
-              <!-- <a href="#" class="btn btn-primary btn-sm">Ver Demo</a> -->
-              <a href="#" class="btn btn-outline-primary btn-sm">Repo Privado</a>
+
+            <div class="row g-4">
+                <!-- PROYECTO 1: ERP MULTISUCRUSAL (NUEVO) -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card project-card h-100 shadow-sm border-0">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-danger align-self-start mb-2">Destacado</span>
+                            <h5 class="card-title fw-bold">ERP Multi-Sucursal Retail Eléctrico</h5>
+                            <p class="card-text text-muted flex-grow-1">
+                                Sistema de gestión modular con arquitectura jerárquica compleja (Categoría ↔ Marca ↔ Producto Base ↔ Variante). Posee importación transaccional masiva de productos desde Excel con preview y reporte de errores fila por fila. Control estricto de Stock por ubicación, reservas automáticas, remitos con PDF (PDFKit) y Ledger de Cuenta Corriente integrado con idempotencia.
+                            </p>
+                            <div class="mb-3 tech-badges">
+                                <span class="badge bg-dark">NestJS 11</span>
+                                <span class="badge bg-dark">Next.js 16</span>
+                                <span class="badge bg-dark">PostgreSQL</span>
+                                <span class="badge bg-dark">TypeORM</span>
+                                <span class="badge bg-dark">Swagger</span>
+                            </div>
+                            <div class="d-flex gap-2 mt-auto">
+                                <a href="https://back-wpmg.onrender.com/api/swagger" class="btn btn-primary btn-sm" target="_blank">Ver Swagger</a>
+                                <a href="https://erp-multi-front.vercel.app/" class="btn btn-outline-primary btn-sm" target="_blank">Demo Frontend</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROYECTO 2: RING MOTOS -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card project-card h-100 shadow-sm border-0">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-success align-self-start mb-2">En Producción Real</span>
+                            <h5 class="card-title fw-bold">Sistema Comercial – Ring Motos</h5>
+                            <p class="card-text text-muted flex-grow-1">
+                                Aplicación a medida para taller y venta de repuestos. Resuelve de forma nativa la conciliación y auditoría de cajas diarias (fuente de verdad), cuentas corrientes, pagos parciales distribuidos y transacciones atómicas aisladas para evitar corrupción de stock. Reemplazó por completo planillas manuales.
+                            </p>
+                            <div class="mb-3 tech-badges">
+                                <span class="badge bg-dark">NestJS</span>
+                                <span class="badge bg-dark">TypeScript</span>
+                                <span class="badge bg-dark">PostgreSQL</span>
+                                <span class="badge bg-dark">RBAC Security</span>
+                            </div>
+                            <div class="d-flex gap-2 mt-auto">
+                                <a href="./asset/videos/pc.mp4" class="btn btn-primary btn-sm" target="_blank">Demo PC</a>
+                                <a href="./asset/videos/mobile.mp4" class="btn btn-outline-primary btn-sm" target="_blank">Demo Mobile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROYECTO 3: API REST E-COMMERCE -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card project-card h-100 shadow-sm border-0">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-secondary align-self-start mb-2">Académico Avanzado</span>
+                            <h5 class="card-title fw-bold">API Rest Ecommerce – Soy Henry</h5>
+                            <p class="card-text text-muted flex-grow-1">
+                                Backend robusto para comercio electrónico. Implementa flujos completos de carritos de compras, órdenes de compra persistidas, encriptación con Bcrypt, JSON Web Tokens y documentación automatizada interactiva con Swagger.
+                            </p>
+                            <div class="mb-3 tech-badges">
+                                <span class="badge bg-dark">NestJS</span>
+                                <span class="badge bg-dark">TypeScript</span>
+                                <span class="badge bg-dark">Swagger UI</span>
+                                <span class="badge bg-dark">TypeORM</span>
+                            </div>
+                            <div class="d-flex gap-2 mt-auto">
+                                <a href="https://ecommerce-qxtq.onrender.com/api" class="btn btn-primary btn-sm" target="_blank">Ver API Docs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROYECTO 4: CATÁLOGO DE ROPA -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card project-card h-100 shadow-sm border-0">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-secondary align-self-start mb-2">Fullstack</span>
+                            <h5 class="card-title fw-bold">Catálogo Web Responsive</h5>
+                            <p class="card-text text-muted flex-grow-1">
+                                Aplicación web optimizada para dispositivos móviles que organiza dinámicamente prendas por categorías y subcategorías, conectando un frontend ágil con bases relacionales.
+                            </p>
+                            <div class="mb-3 tech-badges">
+                                <span class="badge bg-dark">Java</span>
+                                <span class="badge bg-dark">MySQL</span>
+                                <span class="badge bg-dark">Bootstrap 5</span>
+                            </div>
+                            <div class="d-flex gap-2 mt-auto">
+                                <a href="https://catalogo-ale-g.vercel.app/" class="btn btn-primary btn-sm" target="_blank">Ver Catálogo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROYECTO 5: TURNOS DEPORTIVOS -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card project-card h-100 shadow-sm border-0">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-secondary align-self-start mb-2">Fullstack</span>
+                            <h5 class="card-title fw-bold">Gestión de Turnos Pádel</h5>
+                            <p class="card-text text-muted flex-grow-1">
+                                Aplicación interactiva de reserva de canchas en tiempo real con lógicas complejas de prevención de solapamiento horario y control de disponibilidad por roles de usuario.
+                            </p>
+                            <div class="mb-3 tech-badges">
+                                <span class="badge bg-dark">React</span>
+                                <span class="badge bg-dark">Node.js</span>
+                                <span class="badge bg-dark">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROYECTO 6: RECOMENDACIÓN DE PELÍCULAS -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card project-card h-100 shadow-sm border-0">
+                        <div class="card-body d-flex flex-column">
+                            <span class="badge bg-secondary align-self-start mb-2">Académico</span>
+                            <h5 class="card-title fw-bold">App Recomendación de Películas</h5>
+                            <p class="card-text text-muted flex-grow-1">
+                                Proyecto inicial integrando bases de datos NoSQL con paneles lógicos de administración internos para control de contenidos cargados.
+                            </p>
+                            <div class="mb-3 tech-badges">
+                                <span class="badge bg-dark">Express</span>
+                                <span class="badge bg-dark">MongoDB</span>
+                                <span class="badge bg-dark">JavaScript</span>
+                            </div>
+                            <div class="d-flex gap-2 mt-auto">
+                                <a href="https://github.com/pablopuntin/HenryM2" target="_blank" class="btn btn-outline-primary btn-sm">Código</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </section>
 
-      <!-- Proyecto Turnos Deportivos -->
-      <div class="col-lg-4 col-md-6">
-        <div class="card project-card shadow-sm">
-          <img src="./asset/img/turnos.jpg" class="card-img-top">
-          <div class="card-body">
-            <h5 class="card-title">Venta de Turnos Deportivos</h5>
-            <p class="card-text">Sistema para reservar y administrar turnos de cancha. Incluye autenticación, roles, notificaciones y CRUD de turnos.</p>
-            <div class="mb-3">
-              <span class="badge bg-info me-1">React</span>
-              <span class="badge bg-success me-1">Node.js</span>
-              <span class="badge bg-secondary">PostgreSQL</span>
-            </div>
-            <div class="d-flex gap-2">
-              <!-- <a href="#" class="btn btn-primary btn-sm">Ver Demo</a> -->
-              <a href="#" class="btn btn-outline-primary btn-sm">Repo Privado</a>
-            </div>
-          </div>
+    <!-- Botón Descarga CV -->
+    <section class="text-center my-5 py-4 bg-light-section">
+        <div class="container">
+            <h4 class="fw-bold mb-3">¿Te interesa conocer más de mi perfil?</h4>
+            <a href="./asset/PabloPuntin_CV.pdf" class="btn btn-lg btn-primary shadow-sm" download>
+                <i class="fas fa-file-pdf me-2"></i>Descargar mi CV (PDF)
+            </a>
         </div>
-      </div>
+    </section>
 
-        <!-- Proyecto apiRest modulo 4 Henry -->
-<div class="col-lg-4 col-md-6">
-  <div class="card project-card shadow-sm">
-    <img src="./asset/img/api-rest.jpg" class="card-img-top">
-    <div class="card-body">
-      <h5 class="card-title">ApiRest proyecto Soy Henry</h5>
-      <p class="card-text">
-        Api rest para pequeño ecommerce, con carrito de compras, ordenes de compras, productos y usuarios, autenticacion y autizacion segun rol del usuario, realizado con NestJS, TypeScript, TypeORM, JWT, Bcrypt y documentada con Swagger
-      </p>
-      <div class="mb-3">
-        <span class="badge bg-warning me-1">NestJS</span>
-        <span class="badge bg-info me-1">Swagger</span>
-        <span class="badge bg-success">PostgreSQL</span>
-      </div>
-      <div class="d-flex gap-2">
-        <a href="https://ecommerce-qxtq.onrender.com/api" class="btn btn-primary btn-sm" target="_blank">Ver ApiRest</a>
-      </div>
-    </div>
-  </div>
-</div>
-
- <!-- Sistema de Gestión Comercial y Facturación - Ring Motos -->
-<div class="col-lg-4 col-md-6">
-  <div class="card project-card shadow-sm">
-    <img src="./asset/img/portada.jpg" class="card-img-top" alt="Sistema de Gestión Ring Motos">
-    <div class="card-body">
-      <h5 class="card-title">Sistema de Gestión Comercial y Facturación – Ring Motos</h5>
-      <p class="card-text">
-        Desarrollo de un sistema integral para taller y comercio de motos. Incluye ventas, remitos, pagos parciales, cuentas corrientes (fiados), proveedores y caja diaria como fuente de verdad. 
-        Implementado con <strong>NestJS</strong>, <strong>TypeScript</strong> y <strong>PostgreSQL</strong>, con autenticación JWT, roles y permisos (RBAC), transacciones atómicas y reportes. 
-        Proyecto en producción real, reemplazando procesos manuales y planillas.
-      </p>
-      <div class="mb-3">
-        <span class="badge bg-warning me-1">NestJS</span>
-        <span class="badge bg-primary me-1">TypeScript</span>
-        <span class="badge bg-success me-1">PostgreSQL</span>
-        <span class="badge bg-info me-1">TypeORM</span>
-        <span class="badge bg-dark">JWT</span>
-      </div>
-      <div class="d-flex flex-wrap gap-2">
-        <a href="./asset/videos/pc.mp4" class="btn btn-primary btn-sm" target="_blank">Demo PC</a>
-        <a href="./asset//videos/mobile.mp4" class="btn btn-outline-primary btn-sm" target="_blank">Demo Mobile</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-    </div>
-  </div>
-</section>
-
-<!-- Botón descarga del CV -->
-<section class="text-center my-5">
-  <a href="./asset/PabloPuntin_CV.pdf" class="btn btn-lg btn-outline-primary" download>
-    Descargar mi CV (PDF)
-  </a>
-</section>
-
-
- 
-<!-- Sección Estudios MEJORADA!!-->
-<section id="estudios" class="section-padding mt-4">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="display-5 fw-bold text-primary">Cursos y Estudios</h2>
-      <p class="lead">Mi formación académica y profesional</p>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-8 mx-auto">
-        <!-- CARD 1 -->
-        <div class="card mb-4 shadow-sm border-0">
-          <div class="card-body">
-            <div class="d-flex align-items-center mb-3">
-              <i class="fas fa-graduation-cap text-primary me-3" style="font-size: 1.5rem;"></i>
-              <div>
-                <h5 class="fw-bold mb-1">Técnico Superior en Programación</h5>
-                <p class="text-muted mb-0 small">Instituto Técnico Superior TECLAB • 2018 - 2020</p>
-              </div>
+    <!-- Estudios y Formación -->
+    <section id="estudios" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold section-title">Formación y Estudios</h2>
+                <p class="lead text-muted">Mi trayectoria educativa formal y especializaciones del sector IT</p>
             </div>
-            <ul class="custom-list">
-              <li>Desarrollo web con HTML, CSS y JavaScript</li>
-              <li>Gestión de bases de datos: SQL, Oracle, PostgreSQL</li>
-              <li>Uso de herramientas de gestión de proyectos</li>
-              <li>Lógica, algoritmos y técnicas de diseño estructurado</li>
-              <li>Desarrollo móvil con Java y Android Studio</li>
-              <li>Diseño responsivo y Material Design</li>
-            </ul>
-          </div>
-        </div>
 
-        <!-- CARD 2 -->
-        <div class="card mb-4 shadow-sm border-0">
-          <div class="card-body">
-            <div class="d-flex align-items-center mb-3">
-              <i class="fas fa-certificate text-success me-3" style="font-size: 1.5rem;"></i>
-              <div>
-                <h5 class="fw-bold mb-1">Full Stack Developer</h5>
-                <p class="text-muted mb-0 small">Henry • 2025 - finalizado</p>
-              </div>
+            <div class="row g-4">
+                <div class="col-12 col-md-6">
+                    <div class="card h-100 education-card border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-graduation-cap text-primary me-3 card-education-icon"></i>
+                                <div>
+                                    <h5 class="fw-bold mb-1">Técnico Superior en Programación</h5>
+                                    <p class="text-muted mb-0 small">Instituto Técnico Superior TECLAB • 2018 - 2020</p>
+                                </div>
+                            </div>
+                            <ul class="custom-list">
+                                <li>Lógica avanzada, estructuras de datos y algoritmia elemental.</li>
+                                <li>Modelado relacional estructurado en SQL y PostgreSQL.</li>
+                                <li>Desarrollo móvil nativo con Java.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="card h-100 education-card border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fas fa-certificate text-success me-3 card-education-icon"></i>
+                                <div>
+                                    <h5 class="fw-bold mb-1">Especialización Full Stack Developer</h5>
+                                    <p class="text-muted mb-0 small">Henry • 2025</p>
+                                </div>
+                            </div>
+                            <ul class="custom-list">
+                                <li>Especialización intensiva en desarrollo backend empresarial.</li>
+                                <li>Arquitecturas desacopladas con NestJS, Node.js y TypeScript.</li>
+                                <li>Contenedores con Docker y despliegues productivos.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p>Especialización en desarrollo web Backend con:</p>
-            <ul class="custom-list">
-              <li>JavaScript, TypeScript, Redux</li>
-              <li>Node.js, Nest, React, Next.js</li>
-              <li>Docker, SQL, NoSQL</li>
-            </ul>
-          </div>
         </div>
-
-        <!-- CARD 3 -->
-        <div class="card mb-4 shadow-sm border-0">
-          <div class="card-body">
-            <div class="d-flex align-items-center mb-3">
-              <i class="fas fa-award text-warning me-3" style="font-size: 1.5rem;"></i>
-              <div>
-                <h5 class="fw-bold mb-1">Programación en Java</h5>
-                <p class="text-muted mb-0 small">Codo a Codo • 2020</p>
-              </div>
-            </div>
-            <ul class="custom-list">
-              <li>Técnicas de programación y POO</li>
-              <li>Base de datos y desarrollo de software</li>
-              <li>Relaciones laborales en entornos IT</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- CARD 4 -->
-        <div class="card shadow-sm border-0">
-          <div class="card-body">
-            <div class="d-flex align-items-center mb-3">
-              <i class="fas fa-code text-info me-3" style="font-size: 1.5rem;"></i>
-              <div>
-                <h5 class="fw-bold mb-1">Responsive Web Design</h5>
-                <p class="text-muted mb-0 small">freeCodeCamp • En curso</p>
-              </div>
-            </div>
-            <ul class="custom-list">
-              <li>HTML5, CSS3, diseño responsivo</li>
-              <li>Buenas prácticas de desarrollo frontend</li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-
+    </section>
 
     <!-- Footer -->
     <footer class="bg-dark text-light py-4">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <p class="mb-0">&copy; 2024 Mi Portfolio. Todos los derechos reservados.</p>
+            <div class="row align-items-center g-3 text-center text-md-start">
+                <div class="col-12 col-md-6">
+                    <p class="mb-0">&copy; 2026 Pablo Puntin. Desarrollado con foco en simplicidad y performance.</p>
                 </div>
-                <div class="col-md-6 text-md-end">
-                    <a href="https://linkedin.com/in/tu-perfil" class="text-light me-3" target="_blank">
+                <div class="col-12 col-md-6 text-md-end">
+                    <a href="https://linkedin.com/in/pablo-puntin-482ab1197" class="text-light me-3 social-link" target="_blank">
                         <i class="fab fa-linkedin fa-lg"></i>
                     </a>
-                    <a href="https://github.com/tu-usuario" class="text-light" target="_blank">
+                    <a href="https://github.com/pablopuntin" class="text-light social-link" target="_blank">
                         <i class="fab fa-github fa-lg"></i>
                     </a>
                 </div>
@@ -407,11 +345,7 @@ imagen developer pantalla  https://capsulasv2.soyhenry.com/scorm/01605146-c857-4
         </div>
     </footer>
 
-
-
-
-
-
+    <!-- Scripts Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="./index.js"></script>
 </body>
